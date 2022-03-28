@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', 'sans-sarif';
+    font-size: 16px;
+}
+
+body {
+    color: black;
+    line-height: 1.5;
+    background-image: url('register/bgimage.png');
+}
+
+.button_submit {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background-color: #008CBA;
+    border-radius: 5px;
+
+}
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: justify;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.profile {
+    margin-left: 30px;
+
+}
+
+.summary .todo_task p {
+    font-weight: bold !important;
+    text-align: center;
+}
+
+
+.summary .complete p {
+    font-weight: bold !important;
+    text-align: center;
+}
+
+.todo {
+    margin-top: 10px;
+    margin-left: 100px;
+    display: block;
+    width: 100%;
+
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.task {
+    width: 100%;
+}
+
+.task h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.task_list {
+    /* border: 10px solid red; */
+}
+
+.task_list ul li {
+    display: flex;
+
+    margin-bottom: 20px;
+}
+
+.task_list ul li:last-child {
+    border: none;
+}
+
+.task_list ul li p {
+    width: 100%;
+    border-bottom: 1px solid rgb(159, 156, 163);
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.task_list ul li p.complete {
+
+    text-decoration: line-through;
+    display: flex;
+    /* justify-content: left !important; */
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+
+div.button {
+    display: flex;
+    margin-left: 6px;
+    margin-right: 20px;
+
+}
+
+div.button a {
+    margin-right: 5px;
+}
+
+a.delete {
+
+    background-color: red;
+
+}
+
+a.edit {
+
+    background-color: green;
+
+}
+
+a.complete {
+    background-color: rgb(55, 166, 230);
+}
+
+.profile,
+.user_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.user_details p {
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.user_details img {
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 60%;
+
+}
+
+.summary {
+    display: flex;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+}
+
+form input[type="submit"] {
+    font-size: 16px;
+    height: 40px;
+    margin-left: 5px;
+
+}
+
+.todo_task,
+.complete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

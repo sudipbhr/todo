@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('bgimage.png') no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(to right, #cbb4d4, #20002c); */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.form_container {
+    position: relative;
+    margin-top: 24%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 2px solid rgb(76, 85, 167);
+    /* background-color: #f5f5f5; */
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px rgb(76, 85, 167);
+}
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+a {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+}
+
+form label {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+form input {
+    margin-top: 10px;
+    height: 40px;
+    width: 95%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #98a5e0;
+    color: rgb(37, 46, 129)
+}
+
+form input:focus {
+    box-shadow: 15px 15px 15px rgb(76, 85, 167);
+    outline: none;
+}
+
+.form_container {
+    padding-left: 20px;
+}
+
+.submit button {
+    height: 40px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 40%;
+    font-size: 15px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+    border: none;
+}
+
+.submit button:hover {
+    background-color: salmon;
+    box-shadow: 15px 15px 15px rgb(76, 85, 167);
+}
+
+.fname,
+.email,
+.password,
+.lname {
+    margin-bottom: 15px;
+}
+
+.submit p {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.error::before {
+    content: '!!';
+}
+
+#error {
+    color: red;
+    font-size: 20px;
+}
